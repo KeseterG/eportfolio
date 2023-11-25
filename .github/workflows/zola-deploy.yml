@@ -31,6 +31,6 @@ jobs:
       - name: Build and deploy
         uses: shalzz/zola-deploy-action@v0.17.1
         env:
-          BUILD_DIR: docs
+          OUT_DIT: docs
           PAGES_BRANCH: gh-pages
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKsEN: ${{ secrets.GITHUB_TOKEN }}
