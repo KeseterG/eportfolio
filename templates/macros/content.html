@@ -1,0 +1,29 @@
+{% macro social_media(social_config) %}
+    {% if social_config.email %}
+    <a href="mailto::{{social_config.email}}" class="clear">
+        <span class="icon social">
+            <i class="fa fa-envelope fa-lg"></i>
+        </span>
+    </a>
+    {% endif %}
+
+    {% if social_config.github %}
+    <a href="{{social_config.github}}" class="clear">
+        <span class="icon social">
+            <i class="fab fa-github fa-lg"></i>
+        </span>
+    </a>
+    {% endif %}
+
+    {% if social_config.linkedin %}
+    <a href="{{social_config.linkedin}}" class="clear">
+        <span class="icon social">
+            <i class="fab fa-linkedin fa-lg"></i>
+        </span>
+    </a>
+    {% endif %}
+{% endmacro %}
+
+{% macro tag(content, type) %}
+<span class="tag {{ type }}">{{ content }}</span>
+{% endmacro %}

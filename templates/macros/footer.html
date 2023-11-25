@@ -1,0 +1,17 @@
+{% import 'macros/content.html' as macro_content %}
+
+{% macro footer() %}
+<div class="container" style="font-size:large;">
+    <div class="flex-55">
+        <div class="flex-55-1">
+            {{ macro_content::social_media(social_config=config.extra.social) }}
+        </div>
+        <div class="flex-55-2">
+            <i>Zimeng Chai's E-Portfolio</i><br>
+            Built with <a href="https://www.getzola.org/">Zola</a> and <a href="https://picocss.com/">Pico.css</a>.<br>
+            Zimeng Chai, 2022-2023.
+
+        </div>
+    </div>
+</div>
+{% endmacro %}

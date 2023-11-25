@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% import 'macros/head.html' as macro_head %}
+{% import 'macros/navigation.html' as macro_navigation %}
+{% import 'macros/content.html' as macro_content %}
+
+{% block extra_loads %}
+{{ macro_head::fontawesome() }}
+{% endblock extra_loads %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<section>
+    <hgroup class="center">
+        <h3 class="emphasis">Nothing is here...</h3>
+        <p>You can go back to the index page by clicking <a href="/">this link</a>.</p>
+    </hgroup>
+</section>
+
+{% endblock content %}

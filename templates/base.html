@@ -1,0 +1,44 @@
+{% import 'macros/head.html' as macro_head %}
+{% import 'macros/navigation.html' as macro_navigation %}
+{% import 'macros/footer.html' as macro_footer %}
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %} {% endblock %}</title>
+  {{ macro_head::resource() }}
+  {{ macro_head::stylesheet() }}
+  {{ macro_head::javascript(name="js/theme-switcher.js") }}
+  {{ macro_head::katex() }}
+  {{ macro_head::lazyload() }}
+  {% block extra_loads %}
+  {% endblock %}
+</head>
+
+<body data-theme="light">
+  <div class="hero background-grey">
+    {% block nav %}
+      {{ macro_navigation::navigation(current_section="Zimeng Chai's E-Portfolio") }}
+    {% endblock %}
+  </div>
+  
+  <main class="container">
+    <div>
+        {% block content %}{% endblock %}
+    </div>
+  </main>
+
+
+
+  <footer class="hero secondary background-grey" data-theme="dark">
+    {% block footer %}
+      {{ macro_footer::footer() }}
+    {% endblock %}
+  </footer>
+</body>
+
+</html>

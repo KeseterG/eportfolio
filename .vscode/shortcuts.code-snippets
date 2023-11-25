@@ -1,0 +1,25 @@
+{
+	"Page Head": {
+		"prefix": "pghead",
+		"body": [
+		  "+++",
+		  "title=\"\"",
+		  "description=\"\"",
+		  "date=\"\""
+		  "",
+		  "[taxonomies]",
+		  "categories=[]",
+		  "skills=[]",
+		  "",
+		  "[extra]",
+		  "byline = \"\"",
+		  "timeframe = \"\"",
+		  "organization = \"\"",
+		  "role = \"\"",
+		  "code_link=\"\"",
+		  "title_image = \"\"",
+		  "+++"
+		],
+		"description": "Page Head"
+	  }
+}

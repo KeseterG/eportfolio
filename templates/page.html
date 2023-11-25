@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+{% import 'macros/head.html' as macro_head %}
+{% import 'macros/navigation.html' as macro_navigation %}
+{% import 'macros/content.html' as macro_content %}
+
+{% block extra_loads %}
+{{ macro_head::fontawesome() }}
+{% endblock extra_loads %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<div class="grid">
+    <hgroup>
+        <h1 class="emphasis">
+            {{ page.title }}
+            {% if page.extra.code_link %}
+                &hairsp;
+                <a href="{{ page.extra.code_link }}" class="clear">
+                    <span class="icon">
+                        <i class="fa fa-code fa-sm"></i>
+                    </span>
+                </a>
+            {% endif %}
+
+            {% if page.extra.download_link %}
+                &hairsp;
+                <a href="{{ page.extra.download_link }}" class="clear">
+                    <span class="icon">
+                        <i class="fa fa-download fa-sm"></i>
+                    </span>
+                </a>
+            {% endif %}
+        </h1>
+        <p>
+            {# <small><i>Word Count: {{ page.word_count }}, Estimated Readtime: {{ page.reading_time }} min</i></small> #}
+            {% if page.extra.byline %}
+            <small><i>{{ page.extra.byline }}</i></small>
+            {% endif %}
+            {% if page.extra.role %}
+            <br>
+            <small><i>{{ page.extra.role }}</i></small>
+            {% endif %}
+            {% if page.extra.timeframe %}
+            <br>
+            <small><i>{{ page.extra.timeframe }}</i></small>
+            {% endif %}
+
+            {% if page.extra.organization %}
+            <br>
+            <small><i>{{ page.extra.organization }}</i></small>
+            {% endif %}
+
+            <br>
+            {% if page.taxonomies.categories %}
+            <br>
+            {% for category in page.taxonomies.categories %}
+            {{ macro_content::tag(content=category, type="info") }}
+            &hairsp;
+            {% endfor %}
+            {% endif %}
+
+            {% if page.taxonomies.skills %}
+            {% for skill in page.taxonomies.skills %}
+            {{ macro_content::tag(content=skill, type="highlight") }}
+            &hairsp;
+            {% endfor %}
+            {% endif %}
+        </p>
+    </hgroup>
+    <div class="center">
+        {% if page.extra.title_image %}
+        {% set target_image_path = "content" ~ page.path ~ page.extra.title_image %}
+        {% set image = resize_image(path=target_image_path, width=500, height=500) %}
+        <div>
+            <img src="{{ image.url }}" height="auto" />
+        </div>
+        {% endif %}
+    </div>
+
+    <p>
+        {{ page.description | safe }}
+    </p>
+</div>
+
+<hr class="solid"><br>
+
+<div class="container grid">
+    <section>
+        {{ page.content | safe }}
+    </section>
+    <aside>
+        <div class="sticky" style="padding: 0.1rem">
+            {% if page.toc %}
+            <ul>
+                {% for h1 in page.toc %}
+                <li>
+                    <a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+                    {% if h1.children %}
+                    <ul>
+                        {% for h2 in h1.children %}
+                        <li>
+                            <a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+    </aside>
+</div>
+
+{% if  page.backlinks %}
+<hr class="solid"><br>
+<div class="container">
+    <h4 class="emphasis">Backlinks</h4>
+    {% for link in page.backlinks %}
+     <a href="{{link.permalink}}">{{ link.title }}</a> <br>
+    {% endfor %}
+</div>
+{% endif %}
+
+
+<br>
+{% endblock content %}

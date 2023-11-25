@@ -1,0 +1,8 @@
+<div class="center">
+    <video controls style="width: 90%; height: 100%; object-fit:fill;">
+        {% set path = page.path ~ name %}
+        {% set type = name | split(pat=".") | last -%}
+        <source src="{{path}}" type="{{ 'video/' ~ type }}">
+    </video>
+</div>
+

@@ -1,0 +1,226 @@
+@import "nord";
+@import "../pico/scss/pico.scss";
+
+
+// Customizations
+
+@media (min-width: 700px) {
+    main .grid {
+        grid-column-gap: 2rem;
+        grid-template-columns: auto 25%;
+    }
+}
+
+[data-theme="light"], :root:not([data-theme="dark"]) {
+    --font-size: 18px;
+    --spacing: 0.5rem;
+    --color: #{$nord0};
+    --h1-color: #{$nord0};
+    --h2-color: #{$nord0};
+    --h3-color: #{$nord0};
+    --h4-color: #{$nord0};
+    --h5-color: #{$nord0};
+    --h6-color: #{$nord0};
+
+    --primary: #{$nord10};
+    --secondary: #{rgba($nord3, 0.9)};
+
+    // Muted colors
+    --muted-color: #{$grey-500};
+    --muted-border-color: #{$grey-50};
+
+    // Primary colors
+    --primary-hover: #{$nord8};
+    --primary-focus: #{rgba($primary-600, 0.125)};
+    --primary-inverse: #{$white};
+    --deeper: #{$nord2};
+
+    // Secondary colors
+    --secondary-hover: #{rgba($nord3, 0.7)};
+    --secondary-focus: #{rgba($nord3, 0.125)};
+    --secondary-inverse: #{$white};
+    --border-radius: 3px;
+
+    // Auxilary colors
+    --danger: #{$nord11};
+    --warning: #{$nord12};
+    --highlight: #{$nord13};
+    --success: #{$nord14};
+    --info: #{$nord9};
+
+    $box-shadow-elevation: 0.2rem;
+    $box-shadow-blur-strengh: 0rem;
+}
+
+// general settings
+.vcentered {
+    flex: auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.right {
+    float: right;
+}
+
+html {
+    font-family: Inter, Roboto, Arial, Helvetica, sans-serif;
+}
+
+.background-blue {
+    background-color: $nord10;
+} 
+
+.background-grey {
+    background-color: $nord3;
+} 
+
+// flexboxes
+.flex-37 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 0px;
+}
+    
+.flex-37-1 { grid-area: 1 / 1 / 2 / 2; }
+.flex-37-2 { grid-area: 1 / 2 / 2 / 6; }
+
+.flex-55 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+}
+    
+.flex-55-1 { grid-area: 1 / 1 / 7 / 4; }
+.flex-55-2 { grid-area: 1 / 4 / 7 / 7; }
+
+.flex-55-55 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+    
+.flex-55-55-1 { grid-area: 1 / 1 / 2 / 2; }
+.flex-55-55-2 { grid-area: 1 / 2 / 2 / 3; }
+.flex-55-55-3 { grid-area: 2 / 1 / 3 / 2; }
+.flex-55-55-4 { grid-area: 2 / 2 / 3 / 3; }
+
+ul.tabs li a  {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--nav-background);
+    color: var(--h1-color);
+  
+    transition: background-color var(--transition);
+  
+    &:is([aria-current], :hover, :active, :focus) {
+      --nav-background: var(--deeper);
+    }
+}
+
+article {
+    padding-top: 2rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+// special style classses
+.emphasis {
+    font-family: Montserrat, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--h1-color);
+}
+
+.inline {
+    display: inline-block;
+}
+
+a.clear {
+    text-decoration: none;
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+    color: var(--color);
+}
+
+hr.dashed {
+    border-top: 3px dashed var(--muted-border-color);
+}
+
+hr.dotted {
+    border-top: 3px dotted var(--muted-border-color);
+}
+
+hr.solid {
+    border-top: 3px solid var(--muted-border-color);
+}
+
+.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 3%;
+}
+
+.square-card {
+    background-color: var(--color);
+    display: inline-block;
+    border-radius: var(--border-radius) ;
+}
+
+// components
+span.tag {
+    color: var(--primary-inverse);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: medium;
+    border-radius: var(--border-radius);
+    background-color: var(--primary);
+    text-align: center;
+
+    &.primary {
+        background-color: var(--primary);
+    }
+
+    &.secondary {
+        background-color: var(--secondary);
+    }
+
+    &.dark {
+        background-attachment: var(--color);
+    }
+
+    &.danger {
+        background-color: var(--danger);
+    }
+    
+    &.warning {
+        background-color: var(--warning);
+    }
+
+    &.success {
+        background-color: var(--success);
+    }
+
+    &.highlight {
+        background-color: var(--highlight);
+    }
+
+    &.info {
+        background-color: var(--info);
+    }
+}
+
+
+
+

@@ -1,0 +1,151 @@
+{% extends "base.html" %}
+{% import 'macros/head.html' as macro_head %}
+{% import 'macros/navigation.html' as macro_navigation %}
+{% import 'macros/content.html' as macro_content %}
+{% block extra_loads %}
+{{ macro_head::stylesheets(targets = ["specials/index.css"]) }}
+{{ macro_head::fontawesome() }}
+{% endblock extra_loads %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<hgroup>
+  <h1 class="emphasis">
+      {{ section.title }}
+  </h1>
+  <p>
+      {% if section.extra.byline %}
+      <small><i>{{ section.extra.byline }}</i></small>
+      {% endif %}
+  </p>
+</hgroup>
+{% for s in section.subsections %}
+  {% set sub = get_section(path=s) %}
+  <h2 class="emphasis">{{ sub.title }}</h2>
+  
+  <p>{{ sub.description }}</p>
+
+  {% for page in sub.pages %}
+  <article id="article">
+    <div class="grid">
+      <div>
+        <hgroup>
+          <h4>{{ page.title }}</h4>
+          <p>
+            {% if page.extra.role %}
+            <small><i>{{ page.extra.role }}</i></small>
+            <br>
+            {% endif %}
+            {% if page.extra.timeframe %}
+            <small><i>{{ page.extra.timeframe }}</i></small>
+            <br>
+            {% endif %}
+
+            {% if page.extra.organization %}
+            <small><i>{{ page.extra.organization }}</i></small>
+            <br>
+            {% endif %}
+
+            
+            {% if page.taxonomies.categories %}
+            <br>
+            {% for category in page.taxonomies.categories %}
+            {{ macro_content::tag(content=category, type="info") }}
+            &hairsp;
+            {% endfor %}
+            {% endif %}
+
+            {% if page.taxonomies.skills %}
+            {% for skill in page.taxonomies.skills %}
+            {{ macro_content::tag(content=skill, type="highlight") }}
+            &hairsp;
+            {% endfor %}
+            {% endif %}
+          </p>
+        </hgroup>
+      </div>
+      {% if page.extra.title_image %}
+        <div>
+          {% set path = page.colocated_path ~ page.extra.title_image %}
+          {% set image = resize_image(path=path, height=400, op="fit_height") %}
+          <img src="{{ image.url }}" class="vcentered" style="border-radius: 3px;"/>
+        </div>
+      {% endif %}
+    </div>
+    <br>
+
+    <p>{{ page.description }}</p>
+    <footer>
+      <a href="{{get_url(path=page.path)}}">Read More...</a>
+    </footer>
+    
+  </article>
+  {% endfor %}
+  <hr class="solid">
+{% endfor %}
+  
+{% if section.subsections %}
+<h2 class="emphasis">Others</h2>
+{% endif %}
+
+{% for page in section.pages %}
+    <article id="article">
+      <div class="grid">
+        <div>
+          <hgroup>
+            <h4>{{ page.title }}</h4>
+            <p>
+              {% if page.extra.role %}
+              <small><i>{{ page.extra.role }}</i></small>
+              <br>
+              {% endif %}
+              {% if page.extra.timeframe %}
+              <small><i>{{ page.extra.timeframe }}</i></small>
+              <br>
+              {% endif %}
+
+              {% if page.extra.organization %}
+              <small><i>{{ page.extra.organization }}</i></small>
+              <br>
+              {% endif %}
+
+              
+              {% if page.taxonomies.categories %}
+              <br>
+              {% for category in page.taxonomies.categories %}
+              {{ macro_content::tag(content=category, type="info") }}
+              &hairsp;
+              {% endfor %}
+              {% endif %}
+
+              {% if page.taxonomies.skills %}
+              {% for skill in page.taxonomies.skills %}
+              {{ macro_content::tag(content=skill, type="highlight") }}
+              &hairsp;
+              {% endfor %}
+              {% endif %}
+            </p>
+
+            
+          </hgroup>
+        </div>
+        {% if page.extra.title_image %}
+          <div>
+            {% set path = page.colocated_path ~ page.extra.title_image %}
+            {% set image = resize_image(path=path, height=400, op="fit_height") %}
+            <img src="{{ image.url }}" class="vcentered" style="border-radius: 3px;"/>
+          </div>
+        {% endif %}
+      </div>
+      <br>
+
+      <p>{{ page.description }}</p>
+      <footer>
+        <a href="{{get_url(path=page.path)}}">Read More...</a>
+      </footer>
+      
+    </article>
+    {% endfor %}
+{% endblock content %}

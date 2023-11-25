@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% import 'macros/head.html' as macro_head %}
+{% import 'macros/navigation.html' as macro_navigation %}
+{% import 'macros/content.html' as macro_content %}
+{% block extra_loads %}
+{{ macro_head::stylesheets(targets = ["specials/index.css"]) }}
+{{ macro_head::fontawesome() }}
+{% endblock extra_loads %}
+
+{% block title %}
+{{ section.extra.name }}
+{% endblock %}
+
+{% block content %}
+{% set education_section = get_section(path="education/_index.md") %}
+{% set educations = education_section.pages %}
+{% set experience_section = get_section(path="experiences/_index.md") %}
+{% set experiences = experience_section.pages %}
+
+<section class="container">
+  <div class="hero vcentered">
+    <div class="grid vcentered">
+      <div>
+        <hgroup>
+          <h1 class="emphasis">{{ section.extra.name }}</h1>
+          <h2>
+            {{ section.extra.identity }}
+            <br />
+            {{ section.extra.organization }}
+          </h2>
+        </hgroup>
+        <div>
+          {{ macro_content::social_media(social_config=config.extra.social) }}
+        </div>
+      </div>
+      <div>
+        {% set image = resize_image(path="static/images/index/headshot!.jpg",
+        width=300, height=300, op="fit") %}
+        <img src="{{ image.url }}" />
+      </div>
+    </div>
+  </div>
+  <br />
+  <div class="container">{{ section.content | safe }}</div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="emphasis">Education</h2>
+
+    {% for education in educations %}
+    <article class="flex-37 vcentered" style="padding: 3%">
+      {% set target_image_path = "content" ~ education.path ~ "logo.png" %} {%
+      set image = resize_image(path=target_image_path, width=300, height=600, op="fit") %}
+      <div class="flex-37-1">
+        <img src="{{ image.url }}" height="auto" style="float:right" />
+      </div>
+      <div class="flex-37-2">
+        <div class="headings vcentered">
+          <h4 class="emphasis">{{ education.title }}</h4>
+          <div class="right">
+            <p><i>{{ education.extra.timeframe }}</i></p>
+          </div>
+          <p>
+            {{ education.extra.level }}<br />
+            <i>{{ education.extra.location }}</i><br />
+            <i>GPA: {{ education.extra.gpa }}</i>
+          </p>
+        </div>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+{% endblock content %}

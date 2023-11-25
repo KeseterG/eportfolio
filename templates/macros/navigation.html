@@ -1,0 +1,21 @@
+{% macro navigation(current_section) %}
+<nav class="container" data-theme="dark">
+    <ul>
+        {% set homepage = get_url(path="@/_index.md") %}
+        <li><a href="{{homepage}}" class="emphasis"><strong>Zimeng Chai's Eportfolio</strong></a></li>
+    </ul>
+    <ul>
+    </ul>
+    
+    <ul class="tabs">
+        {% set resume_url = get_url(path="@/resume/index.md") %}
+        <li><a href="{{resume_url}}">Resume</a></li>
+        {% set experience_url = get_url(path="@/experiences/_index.md") %}
+        <li><a href="{{experience_url}}">Experiences</a></li>
+        {% set projects_url = get_url(path="@/projects/_index.md") %}
+        <li><a href="{{projects_url}}">Projects</a></li>
+        {% set about_url = get_url(path="@/about/index.md") %}
+        <li><a href="{{about_url}}">About</a></li>
+    </ul>
+</nav>
+{% endmacro %}
