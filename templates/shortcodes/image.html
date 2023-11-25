@@ -1,4 +1,4 @@
 {% set path = page.path ~ name %}
 <div>
-    <img alt="{{ alt }}" class="lazy" src="{{path}}"/>
+    <img alt="{{ alt }}" class="lazy" src="{{ config.base_url ~ path }}"/>
 </div>

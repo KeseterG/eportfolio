@@ -1,14 +1,14 @@
 <div class="flex-55 center vcentered">
     <div class="flex-55-1">
         <video controls style="width: 90%; height: 100%; object-fit:fill;">
-            {% set path1 = page.path ~ name1 %}
+            {% set path1 = config.base_url ~ page.path ~ name1 %}
             {% set type1 = name1 | split(pat=".") | last -%}
             <source src="{{path1}}" type="{{ 'video/' ~ type1 }}">
         </video>
     </div>
     <div class="flex-55-2">
         <video controls style="width: 90%; height: 100%; object-fit:fill;">
-            {% set path2 = page.path ~ name2 %}
+            {% set path2 = config.base_url ~ page.path ~ name2 %}
             {% set type2 = name2 | split(pat=".") | last -%}
             <source src="{{path2}}" type="{{ 'video/' ~ type2 }}">
         </video>

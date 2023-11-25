@@ -1,18 +1,18 @@
 <div class="flex-55-55 center vcentered">
     <div class="flex-55-55-1">
-        {% set p1 = page.path ~ name1 %}
+        {% set p1 = config.base_url ~ page.path ~ name1 %}
         <img alt="{{ alt1 }}" src="{{p1}}" />
     </div>
     <div class="flex-55-55-2">
-        {% set p2 = page.path ~ name2 %}
+        {% set p2 = config.base_url ~ page.path ~ name2 %}
         <img alt="{{ alt2 }}" src="{{p2}}" />
     </div>
     <div class="flex-55-55-3">
-        {% set p3 = page.path ~ name3 %}
+        {% set p3 = config.base_url ~ page.path ~ name3 %}
         <img alt="{{ alt3 }}" src="{{p3}}" />
     </div>
     <div class="flex-55-55-4">
-        {% set p4 = page.path ~ name4 %}
+        {% set p4 = config.base_url ~ page.path ~ name4 %}
         <img alt="{{ alt4 }}" src="{{p4}}" />
     </div>
 </div>
