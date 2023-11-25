@@ -17,7 +17,7 @@ The site is built based on [Zola](https://www.getzola.org/) and [Pico.css](https
 ### Content
 
 - [ ] Walli - Robotics Arm
-- [ ] Kyanite
+- [x] Kyanite
 - [ ] Zorro
 - [ ] E-Portfolio - More Details & Header Logo
 
