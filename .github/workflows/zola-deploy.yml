@@ -33,4 +33,4 @@ jobs:
         env:
           OUT_DIT: docs
           PAGES_BRANCH: gh-pages
-          GITHUB_TOKsEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
