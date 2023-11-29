@@ -5,7 +5,7 @@ date="2023-09-01"
 
 [taxonomies]
 categories=["Experience"]
-skills=["C++", "Python", "Control Theory", "Robotics"]
+skills=["C++", "Python", "Control Theory", "Robotics", "Documentation"]
 
 [extra]
 byline = ""

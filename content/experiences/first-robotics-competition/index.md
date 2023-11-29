@@ -5,7 +5,7 @@ date="2021-03-05"
 
 [taxonomies]
 categories=["Experience"]
-skills=["Java", "Control Theory", "Robotics"]
+skills=["Java", "Control Theory", "Robotics", "Technical Presentation", "Documentation"]
 
 [extra]
 byline = "High School Robotics Competition Experience"
