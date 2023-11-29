@@ -27,6 +27,19 @@ For me, such changes are more of a change for me to go out of my comfort zone, m
 {{ image(name="images/gt-crossland.jpg", alt="GT Crossland") }}
 {{ caption(caption="One of My Favourite Picture of GT. Taken in August 2023, on Rooftop of Crossland Tower.") }}
 
+## Academics & Career
+
+Based on my interest in Robotics, I'm currently pursuing a Bachelor's Degree in Computer Engineering. My future academic plan will be based on that: I'll continue my studies, and very possibly pursue higher degrees (Master's and Doctoral) in the future. At the same time, I would join labs to better practice my skills in research.
+
+Along with academics, I also want to make sure that I have experience in the industry. I plan to take internships when possible during summer vacations, and also be an Undergraduate Teaching Assistant in the future.
+
+Here are some of the key points in my career planning:
+
+- 2023-08: Start of Bachelor's Degree in Computer Engineering
+- 2024-01: Start of Undergraduate Researches
+- 2025-05: Planned First Internship
+- 2028-05: Planned Graduation
+
 ## Hobbies
 
 During my free time, I like to play video games, read books, listen to music, and sometimes watch anime. Apart from entertainment, I like things about Robotics and would do some DIY and studies for my projects.
