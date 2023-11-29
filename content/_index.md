@@ -3,7 +3,7 @@ title="Index Page"
 description="Index Page"
 
 [extra]
-name = "Zimeng Chai"
+name = "Zimeng Chai's Eportfolio"
 identity = "Undergraduate First-Year Student"
 organization = "Georgia Institute of Technology, Atlanta, Georgia"
 +++
