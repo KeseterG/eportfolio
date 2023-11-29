@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title> - Path Planning</title>
+      <link>https://keseterg.github.io/eportfolio</link>
+      <description></description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://keseterg.github.io/eportfolio/skills/path-planning/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Sun, 05 Mar 2023 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Hydrogen</title>
+          <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://keseterg.github.io/eportfolio/projects/robots/hydrogen/</link>
+          <guid>https://keseterg.github.io/eportfolio/projects/robots/hydrogen/</guid>
+          <description>&lt;p&gt;Hydrogen is the third robot I programmed for &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=0zpflsYc4PA&amp;amp;feature=youtu.be&quot;&gt;FIRST Robotics Competition (FRC) Season 2023 - Charged Up&lt;&#x2F;a&gt;. It is the second robot I&#x27;ve programmed.&lt;&#x2F;p&gt;
+&lt;p&gt;Hydrogen is designed to be fast, agile, and simple on the field. The only actuation mechanism for Hydrogen is a RP manipulator - one degree of revolution plus one degree of prismatic action. This allows us to reach all the scoring level while making the robot as simple as possible.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;innovations&quot;&gt;Innovations&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;superstructure-kinematics&quot;&gt;Superstructure Kinematics&lt;&#x2F;h3&gt;
+&lt;p&gt;The whole superstructure is fully described using RP manipulator kinematics. As it only has 2 degrees of freedom, it is easy to describe using trigonometric functions. Using this, we are able to plan the movement of the robotics arm, preventing it from entering dangerous zones (e.g. hitting the ground when over-extending), while compensating gravity based on the current angle of the arm.&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;div&gt;
+    &lt;img alt=&quot;Positive Direcgtions&quot; class=&quot;lazy&quot; src=&quot;https:&#x2F;&#x2F;keseterg.github.io&#x2F;eportfolio&#x2F;projects&#x2F;robots&#x2F;hydrogen&#x2F;images&#x2F;positive-directions.png&quot;&#x2F;&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div style=&quot;padding-top: 10px; padding-bottom:10px; text-align:center&quot;&gt;
+    &lt;small &gt;&lt;i&gt;A Description of Hydrogen&#x27;s Superstructure.&lt;&#x2F;i&gt;&lt;&#x2F;small&gt;
+&lt;&#x2F;div&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;custom-april-tag-localization&quot;&gt;Custom April Tag Localization&lt;&#x2F;h3&gt;
+&lt;p&gt;For accurate position estimation, we reused the Kalman Filter in Acetate for pose estimation. Now, localization is more accurate as the robot can receive updates from residual vision targets, allowing error to be controlled at centimeter level in close range.&lt;&#x2F;p&gt;
+&lt;p&gt;Due to the real-time requirement of the competition, we decided to build a custom onboard computing system to rapidly detect and calculate the translation of April Tags. The system consists of a 5800H mini-pc, powered in 19v after buck-boost. For stability of power, we also used capacitors to reduce the fluctuation in voltage supply due to the action of our robot.&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;div&gt;
+    &lt;img alt=&quot;Ser 5 Pro&quot; class=&quot;lazy&quot; src=&quot;https:&#x2F;&#x2F;keseterg.github.io&#x2F;eportfolio&#x2F;projects&#x2F;robots&#x2F;hydrogen&#x2F;images&#x2F;ser5.png&quot;&#x2F;&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div style=&quot;padding-top: 10px; padding-bottom:10px; text-align:center&quot;&gt;
+    &lt;small &gt;&lt;i&gt;SER5 Pro, the Mini PC We Used on Hydrogen.&lt;&#x2F;i&gt;&lt;&#x2F;small&gt;
+&lt;&#x2F;div&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;a-path-planning&quot;&gt;A* Path Planning&lt;&#x2F;h3&gt;
+&lt;p&gt;The game is mainly a large, flat field, allowing space for high-speed actions and collisions. However, the existence of charging stations becomes an obstacle on the direct way to the scoring spot. To overcome the potential instability of human drivers and operators, while having the support from April Tag information and localization based on Kalman Filters, we decided to use path-finding algorithms, namely &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;A*_search_algorithm&quot;&gt;A*&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Our path-finding algorithms divide the map into small grids and explore in 8 directions. During the exploration, there&#x27;s an adjustable heuristic value h for a tradeoff between accuracy and speed of exploration. We also provided a class to define &amp;quot;obstacles&amp;quot; on the way to the target, and the path planning algorithm will mark those points as invalid when it goes into that region. After finding the path, the algorithm will carry out Floyd Trimming to reduce the number of path points, finally sending back the path to the action command. The action command will &amp;quot;look ahead&amp;quot; by a certain distance on the path, and the drivetrain will follow the path using a PIDF controller at the very end.&lt;&#x2F;p&gt;
+&lt;p&gt;The whole path-planning algorithm is asynchronous. After sending the command, the operator can still carry out movement while waiting for another thread to finish path planning. But as the planning process usually takes less than 0.2 seconds, this function is not usually felt.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;div class=&quot;center&quot;&gt;
+    &lt;video controls style=&quot;width: 90%; height: 100%; object-fit:fill;&quot;&gt;
+        
+        &lt;source src=&quot;https:&amp;#x2F;&amp;#x2F;keseterg.github.io&amp;#x2F;eportfolio&amp;#x2F;projects&amp;#x2F;robots&amp;#x2F;hydrogen&amp;#x2F;videos&amp;#x2F;cut-astar.mp4&quot; type=&quot;video&#x2F;mp4&quot;&gt;
+    &lt;&#x2F;video&gt;
+&lt;&#x2F;div&gt;
+
+
+&lt;div style=&quot;padding-top: 10px; padding-bottom:10px; text-align:center&quot;&gt;
+    &lt;small &gt;&lt;i&gt;A Star Path Planning &amp; Look-ahead Path Following in Action.&lt;&#x2F;i&gt;&lt;&#x2F;small&gt;
+&lt;&#x2F;div&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;operator-web-interface&quot;&gt;Operator Web Interface&lt;&#x2F;h3&gt;
+&lt;p&gt;As Charged Up has 27 (9 * 3) targets on the grid in total, it becomes complicated for the operator to select the target. For better and more intuitive target selection, we developed a web interface system, allowing the operator to interactively choose the target scoring grid, scoring column, and scoring row. The system will also update the status of the robot while allowing the configuration of some of the parameters.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;auto&quot;&gt;Auto&lt;&#x2F;h3&gt;
+&lt;p&gt;With the support of &lt;a href=&quot;https:&#x2F;&#x2F;keseterg.github.io&#x2F;eportfolio&#x2F;projects&#x2F;robots&#x2F;acetate&#x2F;#codeless-autonomous&quot;&gt;&amp;quot;Codeless&amp;quot; Autonomous&lt;&#x2F;a&gt;, the development of autos becomes easier this year. We are able to build 5 sets of autonomous routines for different sides of the fields we are on. At the same time, for the special &amp;quot;balancing&amp;quot; mission at the end of the autonomous period, we programmed a special movement based on the reading of the gyro and the drivetrain encoders.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;div class=&quot;flex-55 center vcentered&quot;&gt;
+    &lt;div class=&quot;flex-55-1&quot;&gt;
+        &lt;video controls style=&quot;width: 90%; height: 100%; object-fit:fill;&quot;&gt;
+            
+            &lt;source src=&quot;https:&amp;#x2F;&amp;#x2F;keseterg.github.io&amp;#x2F;eportfolio&amp;#x2F;projects&amp;#x2F;robots&amp;#x2F;hydrogen&amp;#x2F;videos&amp;#x2F;auto.mp4&quot; type=&quot;video&#x2F;mp4&quot;&gt;
+        &lt;&#x2F;video&gt;
+    &lt;&#x2F;div&gt;
+    &lt;div class=&quot;flex-55-2&quot;&gt;
+        &lt;video controls style=&quot;width: 90%; height: 100%; object-fit:fill;&quot;&gt;
+            
+            &lt;source src=&quot;https:&amp;#x2F;&amp;#x2F;keseterg.github.io&amp;#x2F;eportfolio&amp;#x2F;projects&amp;#x2F;robots&amp;#x2F;hydrogen&amp;#x2F;videos&amp;#x2F;balancec.mp4&quot; type=&quot;video&#x2F;mp4&quot;&gt;
+        &lt;&#x2F;video&gt;
+    &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;div style=&quot;padding-top: 10px; padding-bottom:10px; text-align:center&quot;&gt;
+    &lt;small &gt;&lt;i&gt;Left: 2 Gamepiece Autonomous; Right: Auto Charge Station Balance.&lt;&#x2F;i&gt;&lt;&#x2F;small&gt;
+&lt;&#x2F;div&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;cog-stability&quot;&gt;COG &amp;amp; Stability&lt;&#x2F;h2&gt;
+&lt;p&gt;One of the biggest weaknesses of Hydrogen is that it has a very high COG. The lightweight drivetrain is prone to tipping when the robot fully extends its manipulator for placing pieces, causing it to overturn. When going over the field, the robot may even turn over during high-speed collisions with the opponents. This led to the failure of the robot at the competition.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;development-story&quot;&gt;Development Story&lt;&#x2F;h2&gt;
+&lt;p&gt;Hydrogen is mainly built during the winter vacation of year 2023. During restrictions of the COVID pandemics, we still have to move out&lt;&#x2F;p&gt;
+</description>
+      </item>
+    </channel>
+</rss>

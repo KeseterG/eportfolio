@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title> - Web Development</title>
+      <link>https://keseterg.github.io/eportfolio</link>
+      <description></description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://keseterg.github.io/eportfolio/skills/web-development/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Thu, 09 Nov 2023 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>E-Portfolio</title>
+          <pubDate>Thu, 09 Nov 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://keseterg.github.io/eportfolio/projects/eportfolio/</link>
+          <guid>https://keseterg.github.io/eportfolio/projects/eportfolio/</guid>
+          <description>&lt;h2 id=&quot;principle-of-design&quot;&gt;Principle of Design&lt;&#x2F;h2&gt;
+&lt;p&gt;During the initial phase of the website, I set several core principles that I think matter the most.
+Those principles guide the design, development, and future maintenance of the website.&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Markdown&lt;&#x2F;strong&gt;. Markdown is one of my favorite ways to write content. The symbol is enough for me to create anything I want, and it can be even expanded with plugins and other templates (this will be expanded in the template section). Most importantly, when I&#x27;m done writing all the pages, I want to just focus on &lt;strong&gt;content&lt;&#x2F;strong&gt; - writing markdown is much easier to maintain, has a higher level of modularity, and is much more elegant. So, one of the most important things for me is to have &lt;strong&gt;everything in markdown&lt;&#x2F;strong&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Static&lt;&#x2F;strong&gt;. This is more of a realistic consideration. The most important audience is - of course - HR looking at my portfolio. I want them to access the information as fast as possible. I also don&#x27;t want to bother to host a new server and a domain, static websites are much more convenient, as they can be held easily under GitHub pages.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Appealing&lt;&#x2F;strong&gt;. I like nice fonts, color combinations, and layouts. I want my website to look beautiful not only to showcase but also to satisfy myself. This is a simple but important reason.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;With such requirements, I finally chose to use &lt;a href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;Zola&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;picocss.com&#x2F;&quot;&gt;Pico.css&lt;&#x2F;a&gt; as the main tech stack I&#x27;m going to use.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;Zola&lt;&#x2F;em&gt; is a static site generator (SSG) written in Rust Programming Language. It is super-fast and supports &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Keats&#x2F;tera&quot;&gt;Tera&lt;&#x2F;a&gt;, a template engine similar to Jinja2 and Django Template Language (which I&#x27;m familiar with).&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;Pico.css&lt;&#x2F;em&gt; is a minified CSS framework. I used it very often for my projects, and that&#x27;s the reason it became my top choice. It reaches a good balance between functionality and file size.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;aestheics&quot;&gt;Aestheics&lt;&#x2F;h2&gt;
+&lt;p&gt;During the early phase of development, I set the fonts, theme colors, and layout of the website.&lt;&#x2F;p&gt;
+&lt;p&gt;Most of the decisions are based on my personal preferences. I like cold colors with sharp angles, combined with sans-serif fonts. These things led to the final visual outlook of the website.&lt;&#x2F;p&gt;
+&lt;p&gt;The website uses &lt;a href=&quot;https:&#x2F;&#x2F;www.nordtheme.com&#x2F;docs&quot;&gt;Nord&lt;&#x2F;a&gt; theme for a sense of technology. The main font for this site is &lt;em&gt;Inter&lt;&#x2F;em&gt;, and the complementary font for emphasizing contents is &lt;em&gt;Montserrat&lt;&#x2F;em&gt;. Both of them are sans-serif and are widely used as web fonts.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;editing&quot;&gt;Editing&lt;&#x2F;h2&gt;
+&lt;p&gt;With all the previous things done, I can finally focus on creating the content.&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;div&gt;
+    &lt;img alt=&quot;Editing Window&quot; class=&quot;lazy&quot; src=&quot;https:&#x2F;&#x2F;keseterg.github.io&#x2F;eportfolio&#x2F;projects&#x2F;eportfolio&#x2F;images&#x2F;editing.png&quot;&#x2F;&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div style=&quot;padding-top: 10px; padding-bottom:10px; text-align:center&quot;&gt;
+    &lt;small &gt;&lt;i&gt;Editing in VSCode.&lt;&#x2F;i&gt;&lt;&#x2F;small&gt;
+&lt;&#x2F;div&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Nearly all the editing can be done in VSCode, with the support of plugins and fast SSG. After the content is written, publishing is also easy - it&#x27;s just about the use of Git. I also did many things to accelerate my editing. Custom VS Code snippets and Zola Shortcodes allow me to have more complex functions inside the markdown, beyond what normal markdown can do. For example, the caption and quad images utilize shortcodes that can be directly used in markdown.&lt;&#x2F;p&gt;
+&lt;div class=&quot;flex-55-55 center vcentered&quot;&gt;
+    &lt;div class=&quot;flex-55-55-1&quot;&gt;
+        
+        &lt;img alt=&quot;buzz&quot; src=&quot;https:&amp;#x2F;&amp;#x2F;keseterg.github.io&amp;#x2F;eportfolio&amp;#x2F;projects&amp;#x2F;eportfolio&amp;#x2F;images&amp;#x2F;buzz.png&quot; &#x2F;&gt;
+    &lt;&#x2F;div&gt;
+    &lt;div class=&quot;flex-55-55-2&quot;&gt;
+        
+        &lt;img alt=&quot;buzz&quot; src=&quot;https:&amp;#x2F;&amp;#x2F;keseterg.github.io&amp;#x2F;eportfolio&amp;#x2F;projects&amp;#x2F;eportfolio&amp;#x2F;images&amp;#x2F;buzz.png&quot; &#x2F;&gt;
+    &lt;&#x2F;div&gt;
+    &lt;div class=&quot;flex-55-55-3&quot;&gt;
+        
+        &lt;img alt=&quot;buzz&quot; src=&quot;https:&amp;#x2F;&amp;#x2F;keseterg.github.io&amp;#x2F;eportfolio&amp;#x2F;projects&amp;#x2F;eportfolio&amp;#x2F;images&amp;#x2F;buzz.png&quot; &#x2F;&gt;
+    &lt;&#x2F;div&gt;
+    &lt;div class=&quot;flex-55-55-4&quot;&gt;
+        
+        &lt;img alt=&quot;buzz&quot; src=&quot;https:&amp;#x2F;&amp;#x2F;keseterg.github.io&amp;#x2F;eportfolio&amp;#x2F;projects&amp;#x2F;eportfolio&amp;#x2F;images&amp;#x2F;buzz.png&quot; &#x2F;&gt;
+    &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;&lt;div style=&quot;padding-top: 10px; padding-bottom:10px; text-align:center&quot;&gt;
+    &lt;small &gt;&lt;i&gt;The Four Buzzes are Laied out using the Quad Shortcode!&lt;&#x2F;i&gt;&lt;&#x2F;small&gt;
+&lt;&#x2F;div&gt;</description>
+      </item>
+    </channel>
+</rss>

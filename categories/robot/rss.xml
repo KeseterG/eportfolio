@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title> - Robot</title>
+      <link>https://keseterg.github.io/eportfolio</link>
+      <description></description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://keseterg.github.io/eportfolio/categories/robot/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Fri, 15 Sep 2023 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Walli</title>
+          <pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://keseterg.github.io/eportfolio/projects/robots/walli/</link>
+          <guid>https://keseterg.github.io/eportfolio/projects/robots/walli/</guid>
+          <description>&lt;h2 id=&quot;innovations&quot;&gt;Innovations&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;ros2-control-stack&quot;&gt;ROS2 Control Stack&lt;&#x2F;h3&gt;
+&lt;p&gt;The base drive of the whole robot is based on &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ros-controls&#x2F;ros2_control&quot;&gt;ROS2 Control&lt;&#x2F;a&gt; - a generic, simple, and universal driver system for ROS. This system divides up hardware and software via two concepts - hardware interface and controllers, so the development of hardware drivers can be decoupled from the development of control algorithms.&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;div&gt;
+    &lt;img alt=&quot;Control Stack&quot; class=&quot;lazy&quot; src=&quot;https:&#x2F;&#x2F;keseterg.github.io&#x2F;eportfolio&#x2F;projects&#x2F;robots&#x2F;walli&#x2F;images&#x2F;control-stack.png&quot;&#x2F;&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div style=&quot;padding-top: 10px; padding-bottom:10px; text-align:center&quot;&gt;
+    &lt;small &gt;&lt;i&gt;The ROS2 Control Stack for Walli.&lt;&#x2F;i&gt;&lt;&#x2F;small&gt;
+&lt;&#x2F;div&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I lead the refactoring and integration using ROS2 Control with other team members. Most of the changes are visible in &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;RoboJackets&#x2F;urc-software&#x2F;pull&#x2F;149&quot;&gt;Pull Request #149&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;RoboJackets&#x2F;urc-software&#x2F;pull&#x2F;155&quot;&gt;Pull Request #155&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;moveit-2-robotics-arm-control&quot;&gt;MoveIt!2 Robotics Arm Control&lt;&#x2F;h3&gt;
+&lt;p&gt;Using &lt;a href=&quot;https:&#x2F;&#x2F;moveit.picknik.ai&#x2F;main&#x2F;index.html&quot;&gt;MoveIt!2&lt;&#x2F;a&gt; and the move group tools provided, I&#x27;m able to plan the move of Walli&#x27;s robotics arm in 3d space. At the same time, with the support of real-time servoing programs, the arm is able to be tele-operated.&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;div&gt;
+    &lt;img alt=&quot;Walli Moveit&quot; class=&quot;lazy&quot; src=&quot;https:&#x2F;&#x2F;keseterg.github.io&#x2F;eportfolio&#x2F;projects&#x2F;robots&#x2F;walli&#x2F;images&#x2F;walli_moveit.png&quot;&#x2F;&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div style=&quot;padding-top: 10px; padding-bottom:10px; text-align:center&quot;&gt;
+    &lt;small &gt;&lt;i&gt;Walli&#x27;s 5-DOF Arm in Rviz, Controlled by MoveIt!2&lt;&#x2F;i&gt;&lt;&#x2F;small&gt;
+&lt;&#x2F;div&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Kyanite</title>
+          <pubDate>Wed, 16 Aug 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://keseterg.github.io/eportfolio/projects/robots/kyanite/</link>
+          <guid>https://keseterg.github.io/eportfolio/projects/robots/kyanite/</guid>
+          <description>&lt;p&gt;Kyanite is the fourth and last robot I programmed for &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=LgniEjI9cCM&quot;&gt;FIRST Robotics Competition (FRC) Season 2022 - Rapid React&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Hydrogen is designed to be robust and simple on the field. Based on the innovations on the &lt;a href=&quot;https:&#x2F;&#x2F;keseterg.github.io&#x2F;eportfolio&#x2F;projects&#x2F;robots&#x2F;acetate&#x2F;&quot;&gt;Acetate MK2&lt;&#x2F;a&gt;, we improved the robot&#x27;s reliability while increasing its scoring limit by changing some of the structures. It is designed to have an intake for collecting cargo, a bidirectional ball path to automatically reject cargo, and a non-turreted shooter to send the cargo into the hub. For the final climbing task, we designed a fast hook-pusher bashed climber to skip the third rung and directly go to the traversal rung.&lt;&#x2F;p&gt;
+&lt;p&gt;Kyanite participated in &lt;a href=&quot;https:&#x2F;&#x2F;www.thebluealliance.com&#x2F;event&#x2F;2023cnsh&quot;&gt;FRC China Offseason 2023&lt;&#x2F;a&gt;, and won the competition with Team 8214 and Team 7280 as the 1st Alliance&#x27;s Captain.&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;div&gt;
+    &lt;img alt=&quot;Kyanite on the Field.&quot; class=&quot;lazy&quot; src=&quot;https:&#x2F;&#x2F;keseterg.github.io&#x2F;eportfolio&#x2F;projects&#x2F;robots&#x2F;kyanite&#x2F;images&#x2F;kyanite-on-the-field.jpg&quot;&#x2F;&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div style=&quot;padding-top: 10px; padding-bottom:10px; text-align:center&quot;&gt;
+    &lt;small &gt;&lt;i&gt;Kyanite on the Field.&lt;&#x2F;i&gt;&lt;&#x2F;small&gt;
+&lt;&#x2F;div&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;innovations&quot;&gt;Innovations&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;pneumatic-less-design&quot;&gt;Pneumatic-less Design&lt;&#x2F;h3&gt;
+&lt;p&gt;Kyanite has no pneumatics on it. This allows us to have greater mobility, as the weight occupied by the compressors, tanks, and cylinders is saved. At the same time, we can better control mechanisms&#x27; movement (namely the intaker), for more accurate control.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;automatic-cargo-rejection&quot;&gt;Automatic Cargo Rejection&lt;&#x2F;h3&gt;
+&lt;p&gt;During the competition, there is usually a lot of Cargo on the field. The robot must have a certain kind of ability to reject wrong Cargo, as the Cargo of different colors is usually mixed.&lt;&#x2F;p&gt;
+&lt;p&gt;To reduce the mind effort requirement on the driver, we designed a fully automatic Cargo rejection system. This system will read the status of the Cargo entering the indexer, and then act based on a Finite State Machine we designed. The ball path will either load, spit (in the direction of the intaker), or eject (in the direction of the ejector) Cargo based on the color and number of Cargo in the ball path.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;div class=&quot;center&quot;&gt;
+    &lt;video controls style=&quot;width: 90%; height: 100%; object-fit:fill;&quot;&gt;
+        
+        &lt;source src=&quot;https:&amp;#x2F;&amp;#x2F;keseterg.github.io&amp;#x2F;eportfolio&amp;#x2F;projects&amp;#x2F;robots&amp;#x2F;kyanite&amp;#x2F;videos&amp;#x2F;auto-ballpath.mp4&quot; type=&quot;video&#x2F;mp4&quot;&gt;
+    &lt;&#x2F;video&gt;
+&lt;&#x2F;div&gt;
+
+
+&lt;div style=&quot;padding-top: 10px; padding-bottom:10px; text-align:center&quot;&gt;
+    &lt;small &gt;&lt;i&gt;Auto BallPath Rejection Sample.&lt;&#x2F;i&gt;&lt;&#x2F;small&gt;
+&lt;&#x2F;div&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;fast-traversal-climb&quot;&gt;Fast Traversal Climb&lt;&#x2F;h3&gt;
+&lt;p&gt;We designed a new climbing structure with a combination of a hook (to attach to the highest traversal rung), and a pusher (to adjust Kyanite&#x27;s posture in air). With the combination of actions of these two structures, Kyanite can climb to the traversal rung in less than 6 seconds.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;div class=&quot;center&quot;&gt;
+    &lt;video controls style=&quot;width: 90%; height: 100%; object-fit:fill;&quot;&gt;
+        
+        &lt;source src=&quot;https:&amp;#x2F;&amp;#x2F;keseterg.github.io&amp;#x2F;eportfolio&amp;#x2F;projects&amp;#x2F;robots&amp;#x2F;kyanite&amp;#x2F;videos&amp;#x2F;fast-traversal.mp4&quot; type=&quot;video&#x2F;mp4&quot;&gt;
+    &lt;&#x2F;video&gt;
+&lt;&#x2F;div&gt;
+
+
+&lt;div style=&quot;padding-top: 10px; padding-bottom:10px; text-align:center&quot;&gt;
+    &lt;small &gt;&lt;i&gt;Fast Traversal Climb On the Field!&lt;&#x2F;i&gt;&lt;&#x2F;small&gt;
+&lt;&#x2F;div&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;auto&quot;&gt;Auto&lt;&#x2F;h3&gt;
+&lt;p&gt;With the support of &lt;a href=&quot;https:&#x2F;&#x2F;keseterg.github.io&#x2F;eportfolio&#x2F;projects&#x2F;robots&#x2F;acetate&#x2F;#codeless-autonomous&quot;&gt;&amp;quot;Codeless&amp;quot; Autonomous&lt;&#x2F;a&gt;, the development of autos becomes easy. We designed 5 different sets of autonomous, suitable for different starting points, allowing us to have better coordination with our teammates.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;development-story&quot;&gt;Development Story&lt;&#x2F;h2&gt;
+&lt;p&gt;The time we started to develop Kyanite was around late May. Due to various reasons, the offseason competition held in August is not going to be themed in 2023 (Charged Up), but in 2022 (Rapid React). This might be the last Rapid React competition for FRC.&lt;&#x2F;p&gt;
+&lt;p&gt;During May, we settled on the concept of building a non-turreted robot for simplicity. At the same time, to improve the old robot, we decided to mainly innovate in 3 aspects:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;The Intaker. The mechanism we originally designed is ineffective, as it does not provide enough compression against the cargo. At the same time, the intake uses the only pneumatic cylinder on the robot, which can be improved and removed to lower the robot&#x27;s weight and thus increase the maximum speed of the robot.&lt;&#x2F;li&gt;
+&lt;li&gt;The Climber. Although the old mechanism is enough to climb the traversal rung, the 13-second climb time is a bit long. At the same time, the climbing process is pretty violent, causing a lot of stress on the supporting structure. One of the times, the whole structure bends due to the violent force exerted on the structure. We want to build a more simple and effective structure for climbing.&lt;&#x2F;li&gt;
+&lt;li&gt;The Ballpath. The old ball path is not able to handle the wrong Cargo and is prone to getting stuck under large forces. We want to build a more effective ballpath structure.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;With all the factors combined, we took inspiration from &lt;a href=&quot;https:&#x2F;&#x2F;www.citruscircuits.org&#x2F;2022_robot.html&quot;&gt;1678&#x27;s Robot Margie&lt;&#x2F;a&gt;, and implemented our version.&lt;&#x2F;p&gt;
+&lt;p&gt;During testing, as we still didn&#x27;t have our field, we went to another city for 5 days for testing and improvements. After that period, we went back and finalized the robot at our temporary base, and finally went to the competition.&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;div&gt;
+    &lt;img alt=&quot;Drive Team Badges.&quot; class=&quot;lazy&quot; src=&quot;https:&#x2F;&#x2F;keseterg.github.io&#x2F;eportfolio&#x2F;projects&#x2F;robots&#x2F;kyanite&#x2F;images&#x2F;dt-badges.jpg&quot;&#x2F;&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div style=&quot;padding-top: 10px; padding-bottom:10px; text-align:center&quot;&gt;
+    &lt;small &gt;&lt;i&gt;Drive Team Badges.&lt;&#x2F;i&gt;&lt;&#x2F;small&gt;
+&lt;&#x2F;div&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Hydrogen</title>
+          <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://keseterg.github.io/eportfolio/projects/robots/hydrogen/</link>
+          <guid>https://keseterg.github.io/eportfolio/projects/robots/hydrogen/</guid>
+          <description>&lt;p&gt;Hydrogen is the third robot I programmed for &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=0zpflsYc4PA&amp;amp;feature=youtu.be&quot;&gt;FIRST Robotics Competition (FRC) Season 2023 - Charged Up&lt;&#x2F;a&gt;. It is the second robot I&#x27;ve programmed.&lt;&#x2F;p&gt;
+&lt;p&gt;Hydrogen is designed to be fast, agile, and simple on the field. The only actuation mechanism for Hydrogen is a RP manipulator - one degree of revolution plus one degree of prismatic action. This allows us to reach all the scoring level while making the robot as simple as possible.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;innovations&quot;&gt;Innovations&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;superstructure-kinematics&quot;&gt;Superstructure Kinematics&lt;&#x2F;h3&gt;
+&lt;p&gt;The whole superstructure is fully described using RP manipulator kinematics. As it only has 2 degrees of freedom, it is easy to describe using trigonometric functions. Using this, we are able to plan the movement of the robotics arm, preventing it from entering dangerous zones (e.g. hitting the ground when over-extending), while compensating gravity based on the current angle of the arm.&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;div&gt;
+    &lt;img alt=&quot;Positive Direcgtions&quot; class=&quot;lazy&quot; src=&quot;https:&#x2F;&#x2F;keseterg.github.io&#x2F;eportfolio&#x2F;projects&#x2F;robots&#x2F;hydrogen&#x2F;images&#x2F;positive-directions.png&quot;&#x2F;&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div style=&quot;padding-top: 10px; padding-bottom:10px; text-align:center&quot;&gt;
+    &lt;small &gt;&lt;i&gt;A Description of Hydrogen&#x27;s Superstructure.&lt;&#x2F;i&gt;&lt;&#x2F;small&gt;
+&lt;&#x2F;div&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;custom-april-tag-localization&quot;&gt;Custom April Tag Localization&lt;&#x2F;h3&gt;
+&lt;p&gt;For accurate position estimation, we reused the Kalman Filter in Acetate for pose estimation. Now, localization is more accurate as the robot can receive updates from residual vision targets, allowing error to be controlled at centimeter level in close range.&lt;&#x2F;p&gt;
+&lt;p&gt;Due to the real-time requirement of the competition, we decided to build a custom onboard computing system to rapidly detect and calculate the translation of April Tags. The system consists of a 5800H mini-pc, powered in 19v after buck-boost. For stability of power, we also used capacitors to reduce the fluctuation in voltage supply due to the action of our robot.&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;div&gt;
+    &lt;img alt=&quot;Ser 5 Pro&quot; class=&quot;lazy&quot; src=&quot;https:&#x2F;&#x2F;keseterg.github.io&#x2F;eportfolio&#x2F;projects&#x2F;robots&#x2F;hydrogen&#x2F;images&#x2F;ser5.png&quot;&#x2F;&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div style=&quot;padding-top: 10px; padding-bottom:10px; text-align:center&quot;&gt;
+    &lt;small &gt;&lt;i&gt;SER5 Pro, the Mini PC We Used on Hydrogen.&lt;&#x2F;i&gt;&lt;&#x2F;small&gt;
+&lt;&#x2F;div&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;a-path-planning&quot;&gt;A* Path Planning&lt;&#x2F;h3&gt;
+&lt;p&gt;The game is mainly a large, flat field, allowing space for high-speed actions and collisions. However, the existence of charging stations becomes an obstacle on the direct way to the scoring spot. To overcome the potential instability of human drivers and operators, while having the support from April Tag information and localization based on Kalman Filters, we decided to use path-finding algorithms, namely &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;A*_search_algorithm&quot;&gt;A*&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Our path-finding algorithms divide the map into small grids and explore in 8 directions. During the exploration, there&#x27;s an adjustable heuristic value h for a tradeoff between accuracy and speed of exploration. We also provided a class to define &amp;quot;obstacles&amp;quot; on the way to the target, and the path planning algorithm will mark those points as invalid when it goes into that region. After finding the path, the algorithm will carry out Floyd Trimming to reduce the number of path points, finally sending back the path to the action command. The action command will &amp;quot;look ahead&amp;quot; by a certain distance on the path, and the drivetrain will follow the path using a PIDF controller at the very end.&lt;&#x2F;p&gt;
+&lt;p&gt;The whole path-planning algorithm is asynchronous. After sending the command, the operator can still carry out movement while waiting for another thread to finish path planning. But as the planning process usually takes less than 0.2 seconds, this function is not usually felt.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;div class=&quot;center&quot;&gt;
+    &lt;video controls style=&quot;width: 90%; height: 100%; object-fit:fill;&quot;&gt;
+        
+        &lt;source src=&quot;https:&amp;#x2F;&amp;#x2F;keseterg.github.io&amp;#x2F;eportfolio&amp;#x2F;projects&amp;#x2F;robots&amp;#x2F;hydrogen&amp;#x2F;videos&amp;#x2F;cut-astar.mp4&quot; type=&quot;video&#x2F;mp4&quot;&gt;
+    &lt;&#x2F;video&gt;
+&lt;&#x2F;div&gt;
+
+
+&lt;div style=&quot;padding-top: 10px; padding-bottom:10px; text-align:center&quot;&gt;
+    &lt;small &gt;&lt;i&gt;A Star Path Planning &amp; Look-ahead Path Following in Action.&lt;&#x2F;i&gt;&lt;&#x2F;small&gt;
+&lt;&#x2F;div&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;operator-web-interface&quot;&gt;Operator Web Interface&lt;&#x2F;h3&gt;
+&lt;p&gt;As Charged Up has 27 (9 * 3) targets on the grid in total, it becomes complicated for the operator to select the target. For better and more intuitive target selection, we developed a web interface system, allowing the operator to interactively choose the target scoring grid, scoring column, and scoring row. The system will also update the status of the robot while allowing the configuration of some of the parameters.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;auto&quot;&gt;Auto&lt;&#x2F;h3&gt;
+&lt;p&gt;With the support of &lt;a href=&quot;https:&#x2F;&#x2F;keseterg.github.io&#x2F;eportfolio&#x2F;projects&#x2F;robots&#x2F;acetate&#x2F;#codeless-autonomous&quot;&gt;&amp;quot;Codeless&amp;quot; Autonomous&lt;&#x2F;a&gt;, the development of autos becomes easier this year. We are able to build 5 sets of autonomous routines for different sides of the fields we are on. At the same time, for the special &amp;quot;balancing&amp;quot; mission at the end of the autonomous period, we programmed a special movement based on the reading of the gyro and the drivetrain encoders.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;div class=&quot;flex-55 center vcentered&quot;&gt;
+    &lt;div class=&quot;flex-55-1&quot;&gt;
+        &lt;video controls style=&quot;width: 90%; height: 100%; object-fit:fill;&quot;&gt;
+            
+            &lt;source src=&quot;https:&amp;#x2F;&amp;#x2F;keseterg.github.io&amp;#x2F;eportfolio&amp;#x2F;projects&amp;#x2F;robots&amp;#x2F;hydrogen&amp;#x2F;videos&amp;#x2F;auto.mp4&quot; type=&quot;video&#x2F;mp4&quot;&gt;
+        &lt;&#x2F;video&gt;
+    &lt;&#x2F;div&gt;
+    &lt;div class=&quot;flex-55-2&quot;&gt;
+        &lt;video controls style=&quot;width: 90%; height: 100%; object-fit:fill;&quot;&gt;
+            
+            &lt;source src=&quot;https:&amp;#x2F;&amp;#x2F;keseterg.github.io&amp;#x2F;eportfolio&amp;#x2F;projects&amp;#x2F;robots&amp;#x2F;hydrogen&amp;#x2F;videos&amp;#x2F;balancec.mp4&quot; type=&quot;video&#x2F;mp4&quot;&gt;
+        &lt;&#x2F;video&gt;
+    &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;div style=&quot;padding-top: 10px; padding-bottom:10px; text-align:center&quot;&gt;
+    &lt;small &gt;&lt;i&gt;Left: 2 Gamepiece Autonomous; Right: Auto Charge Station Balance.&lt;&#x2F;i&gt;&lt;&#x2F;small&gt;
+&lt;&#x2F;div&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;cog-stability&quot;&gt;COG &amp;amp; Stability&lt;&#x2F;h2&gt;
+&lt;p&gt;One of the biggest weaknesses of Hydrogen is that it has a very high COG. The lightweight drivetrain is prone to tipping when the robot fully extends its manipulator for placing pieces, causing it to overturn. When going over the field, the robot may even turn over during high-speed collisions with the opponents. This led to the failure of the robot at the competition.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;development-story&quot;&gt;Development Story&lt;&#x2F;h2&gt;
+&lt;p&gt;Hydrogen is mainly built during the winter vacation of year 2023. During restrictions of the COVID pandemics, we still have to move out&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Acetate</title>
+          <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://keseterg.github.io/eportfolio/projects/robots/acetate/</link>
+          <guid>https://keseterg.github.io/eportfolio/projects/robots/acetate/</guid>
+          <description>&lt;p&gt;Acetate is the second robot I programmed for &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=LgniEjI9cCM&quot;&gt;FIRST Robotics Competition (FRC) Season 2022 - Rapid React&lt;&#x2F;a&gt;. It is also the first robot I independently programmed as the team&#x27;s programming lead.&lt;&#x2F;p&gt;
+&lt;p&gt;Acetate is designed to be a fast, accurate, mid-to-long-range scorer. Cargo is the target gamepiece in Rapid React, which is similar to an inflated tennis at the size of a basketball. To score cargo into the target - a 2.5 meter high, 1.2 meter wide hub, acetate is equipped with a custom metric swerve drivetrain at a free speed of 4.0 meters per second, along with a turreted shooter with &lt;span class=&quot;&quot;&gt;&lt;script type=&quot;math&#x2F;tex&quot;&gt;\pm 150 ^{\circ}&lt;&#x2F;script&gt;&lt;&#x2F;span&gt; of rotation range and &lt;span class=&quot;&quot;&gt;&lt;script type=&quot;math&#x2F;tex&quot;&gt;30^{\circ}&lt;&#x2F;script&gt;&lt;&#x2F;span&gt; of backboard adjustment range. Such design allows acetate to aim and score at more than 80% of the positions on the field.&lt;&#x2F;p&gt;
+&lt;p&gt;For the end game of Rapid React, Acetate is required to climb a &amp;quot;monkey bar&amp;quot; consisting of 4 sub-bars, the higher bars will lead to great endgame point gains. For accomplishing this task, Acetate is also equipped with a single staged elevator along with a pneumatically actuated hooker for a switch-and-climb routine to the highest bar.&lt;&#x2F;p&gt;
+&lt;p&gt;Acetate marks a great leap in my Robotics ability. Starting from this robot, I became fluent in Java Programming and gained rich experience in refactoring, structuring, and debugging. At the same time, Acetate allows me to apply control theories and algorithms on a real robot for the first time to improve its performance.&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;div&gt;
+    &lt;img alt=&quot;Acetate in Action&quot; class=&quot;lazy&quot; src=&quot;https:&#x2F;&#x2F;keseterg.github.io&#x2F;eportfolio&#x2F;projects&#x2F;robots&#x2F;acetate&#x2F;images&#x2F;acetate-in-action.jpg&quot;&#x2F;&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div style=&quot;padding-top: 10px; padding-bottom:10px; text-align:center&quot;&gt;
+    &lt;small &gt;&lt;i&gt;Acetate in Action.&lt;&#x2F;i&gt;&lt;&#x2F;small&gt;
+&lt;&#x2F;div&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;innovations&quot;&gt;Innovations&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;state-machine&quot;&gt;State Machine&lt;&#x2F;h3&gt;
+&lt;p&gt;State Machine is a widely used tool for building robotics intelligence. State machine defines a system into a definite number of states, robots will carry out desired actions under each state. The transition of states will be triggered by actions or events, also triggering potential changes along the way.&lt;&#x2F;p&gt;
+&lt;p&gt;Acetate&#x27;s superstructure, along with its ball path &amp;amp; climbing mechanism, is designed using state machines. This allows Acetate to have different modes to handle various situations systematically.&lt;&#x2F;p&gt;
+&lt;div class=&quot;flex-55 center vcentered&quot;&gt;
+    &lt;div class=&quot;flex-55-1&quot;&gt;
+        
+        &lt;img alt=&quot;Superstructure State&quot; src=&quot;https:&amp;#x2F;&amp;#x2F;keseterg.github.io&amp;#x2F;eportfolio&amp;#x2F;projects&amp;#x2F;robots&amp;#x2F;acetate&amp;#x2F;images&amp;#x2F;superstructure-state.jpg&quot; &#x2F;&gt;
+    &lt;&#x2F;div&gt;
+    &lt;div class=&quot;flex-55-2&quot;&gt;
+        
+        &lt;img alt=&quot;BallPath State&quot; src=&quot;https:&amp;#x2F;&amp;#x2F;keseterg.github.io&amp;#x2F;eportfolio&amp;#x2F;projects&amp;#x2F;robots&amp;#x2F;acetate&amp;#x2F;images&amp;#x2F;ballpath-state.jpg&quot; &#x2F;&gt;
+    &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;&lt;div style=&quot;padding-top: 10px; padding-bottom:10px; text-align:center&quot;&gt;
+    &lt;small &gt;&lt;i&gt;State Diagram for Acetate&#x27;s Superstructure and Ballpath&lt;&#x2F;i&gt;&lt;&#x2F;small&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;Most of the automation is based on the use of state machines. One of the examples is the implementation of automatic wrong-cargo rejection. Via the coordination among the turret, shooter, and ballpath, wrong cargo can be ejected to any point on the field. Another example is the automatic climbing sequence, allowing Acetate to reach the highest rung in 12 seconds.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;div class=&quot;center&quot;&gt;
+    &lt;video controls style=&quot;width: 90%; height: 100%; object-fit:fill;&quot;&gt;
+        
+        &lt;source src=&quot;https:&amp;#x2F;&amp;#x2F;keseterg.github.io&amp;#x2F;eportfolio&amp;#x2F;projects&amp;#x2F;robots&amp;#x2F;acetate&amp;#x2F;videos&amp;#x2F;auto-rejection.mp4&quot; type=&quot;video&#x2F;mp4&quot;&gt;
+    &lt;&#x2F;video&gt;
+&lt;&#x2F;div&gt;
+
+
+&lt;div style=&quot;padding-top: 10px; padding-bottom:10px; text-align:center&quot;&gt;
+    &lt;small &gt;&lt;i&gt;Auto-Rejection Example.&lt;&#x2F;i&gt;&lt;&#x2F;small&gt;
+&lt;&#x2F;div&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;simulation-modeling&quot;&gt;Simulation &amp;amp; Modeling&lt;&#x2F;h3&gt;
+&lt;p&gt;Before the start of the design of Acetate MK2, I finished an essay on calculating the optimal trajectory of the Cargo.&lt;&#x2F;p&gt;
+&lt;p&gt;During the launch of the Cargo, there are several key parameters: the angle of the turret, the angle of the backboard, and the rotational velocity of the flywheel. These three components build up a vector in space, determining the initial launching force for the Cargo.&lt;&#x2F;p&gt;
+&lt;div class=&quot;flex-55 center vcentered&quot;&gt;
+    &lt;div class=&quot;flex-55-1&quot;&gt;
+        
+        &lt;img alt=&quot;4D Graph&quot; src=&quot;https:&amp;#x2F;&amp;#x2F;keseterg.github.io&amp;#x2F;eportfolio&amp;#x2F;projects&amp;#x2F;robots&amp;#x2F;acetate&amp;#x2F;images&amp;#x2F;4d-graph.png&quot; &#x2F;&gt;
+    &lt;&#x2F;div&gt;
+    &lt;div class=&quot;flex-55-2&quot;&gt;
+        
+        &lt;img alt=&quot;Trajectories&quot; src=&quot;https:&amp;#x2F;&amp;#x2F;keseterg.github.io&amp;#x2F;eportfolio&amp;#x2F;projects&amp;#x2F;robots&amp;#x2F;acetate&amp;#x2F;images&amp;#x2F;possible_trajectories.png&quot; &#x2F;&gt;
+    &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;&lt;div style=&quot;padding-top: 10px; padding-bottom:10px; text-align:center&quot;&gt;
+    &lt;small &gt;&lt;i&gt;Left: All Potential State Combination; Right: Possible Trajectories at Different Distances.&lt;&#x2F;i&gt;&lt;&#x2F;small&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;Using the physical model and numerical method for optimization, the optimal combination of launching state that leads to minimum cost is generated. This gives a good reference point for our mechanism design &amp;amp; iteration.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;feedforward-tangential-speed-compensation&quot;&gt;Feedforward &amp;amp; Tangential Speed Compensation&lt;&#x2F;h3&gt;
+&lt;p&gt;Characterization is done on the turret and drivetrain to determine their velocity and acceleration feedforward constants. Then, by using a linear model and feeding the result using voltage, the movement of these two mechanisms takes into more control inputs and is more responsive to the change of target. This, in turn, results in heightened accuracy, efficiency, and overall performance of the turret and drivetrain within the larger system.&lt;&#x2F;p&gt;
+&lt;span class=&quot;center&quot;&gt;&lt;script type=&quot;math&#x2F;tex;mode=display&quot;&gt;V = K_s + K_v v + K_a a&lt;&#x2F;script&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;At the same time, the robot&#x27;s velocity with respect to the target is compensated.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;localization&quot;&gt;Localization&lt;&#x2F;h3&gt;
+&lt;p&gt;The localization of Acetate is based on the Extended Kalman Filter (EKF). The localizer receives an update from the odometry of the swerve drivetrain for high-frequency local updates and adjusts the measurement using gyro and camera feedback with a changing covariance. The usage of EKF gives Acetate the ability to fuse multiple measurements effectively, allowing it to find its position on the whole field at any time.&lt;&#x2F;p&gt;
+&lt;p&gt;To provide more accurate observation, an anti-distortion is used on the camera. Every measured point of the vision target will first be through this step before it is calculated and fed into the EKF. The anti-distortion used a quadratic to model the distortion, and the constants of distortion were measured and fitted using a chessboard.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;div class=&quot;flex-55 center vcentered&quot;&gt;
+    &lt;div class=&quot;flex-55-1&quot;&gt;
+        
+        &lt;img alt=&quot;Localization Interface&quot; src=&quot;https:&amp;#x2F;&amp;#x2F;keseterg.github.io&amp;#x2F;eportfolio&amp;#x2F;projects&amp;#x2F;robots&amp;#x2F;acetate&amp;#x2F;images&amp;#x2F;fusion-interface.png&quot; &#x2F;&gt;
+    &lt;&#x2F;div&gt;
+    &lt;div class=&quot;flex-55-2&quot;&gt;
+        
+        &lt;img alt=&quot;Anti Distortion&quot; src=&quot;https:&amp;#x2F;&amp;#x2F;keseterg.github.io&amp;#x2F;eportfolio&amp;#x2F;projects&amp;#x2F;robots&amp;#x2F;acetate&amp;#x2F;images&amp;#x2F;anti-dis.png&quot; &#x2F;&gt;
+    &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;div style=&quot;padding-top: 10px; padding-bottom:10px; text-align:center&quot;&gt;
+    &lt;small &gt;&lt;i&gt;Left: EKF Localization Interface; Right: Anti-Distortation Model&lt;&#x2F;i&gt;&lt;&#x2F;small&gt;
+&lt;&#x2F;div&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;With the aid of localization, Acetate can accurately find its velocity with respect to the vision target. Combined with feedforward, the allows Acetate to have the ability to &amp;quot;move-and-shoot&amp;quot;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;div class=&quot;center&quot;&gt;
+    &lt;video controls style=&quot;width: 90%; height: 100%; object-fit:fill;&quot;&gt;
+        
+        &lt;source src=&quot;https:&amp;#x2F;&amp;#x2F;keseterg.github.io&amp;#x2F;eportfolio&amp;#x2F;projects&amp;#x2F;robots&amp;#x2F;acetate&amp;#x2F;videos&amp;#x2F;move-and-shoot.mp4&quot; type=&quot;video&#x2F;mp4&quot;&gt;
+    &lt;&#x2F;video&gt;
+&lt;&#x2F;div&gt;
+
+
+&lt;div style=&quot;padding-top: 10px; padding-bottom:10px; text-align:center&quot;&gt;
+    &lt;small &gt;&lt;i&gt;Move and Shoot Demonstration.&lt;&#x2F;i&gt;&lt;&#x2F;small&gt;
+&lt;&#x2F;div&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;codeless-autonomous&quot;&gt;&amp;quot;Codeless&amp;quot; Autonomous&lt;&#x2F;h3&gt;
+&lt;p&gt;Finally, combining those abilities, Acetate is given the power to reach a high level of automation during the autonomous phase. Most of the functions are highly automated, thus the coding for the autonomous stage becomes too simple. Using the &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mjansen4857&#x2F;pathplanner&quot;&gt;PathPlanner&lt;&#x2F;a&gt; tool, we can set up autonomous modes without any actual coding.&lt;&#x2F;p&gt;
+&lt;p&gt;In total, Acetate is equipped with 10 autonomous modes, ranging from simple shoot-the-preload to complex 7-ball autonomous. The program will automatically scan all the path configuration files, read the trajectories and corresponding timepoints, finally load them, and get them ready for selection on the dashboard on the operator side.&lt;&#x2F;p&gt;
+&lt;p&gt;Below is the showcase of two advanced autonomous routines: steal autonomous (go to the opponent&#x27;s field for their cargo) and 7 ball autonomous (6 self-cargo, 1 opponent&#x27;s cargo).&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;div class=&quot;center&quot;&gt;
+    &lt;video controls style=&quot;width: 90%; height: 100%; object-fit:fill;&quot;&gt;
+        
+        &lt;source src=&quot;https:&amp;#x2F;&amp;#x2F;keseterg.github.io&amp;#x2F;eportfolio&amp;#x2F;projects&amp;#x2F;robots&amp;#x2F;acetate&amp;#x2F;videos&amp;#x2F;steal.mp4&quot; type=&quot;video&#x2F;mp4&quot;&gt;
+    &lt;&#x2F;video&gt;
+&lt;&#x2F;div&gt;
+
+
+&lt;div style=&quot;padding-top: 10px; padding-bottom:10px; text-align:center&quot;&gt;
+    &lt;small &gt;&lt;i&gt;Steal Autonomous. Time: 7.99&#x27;&#x27;&lt;&#x2F;i&gt;&lt;&#x2F;small&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;center&quot;&gt;
+    &lt;video controls style=&quot;width: 90%; height: 100%; object-fit:fill;&quot;&gt;
+        
+        &lt;source src=&quot;https:&amp;#x2F;&amp;#x2F;keseterg.github.io&amp;#x2F;eportfolio&amp;#x2F;projects&amp;#x2F;robots&amp;#x2F;acetate&amp;#x2F;videos&amp;#x2F;6+1.mp4&quot; type=&quot;video&#x2F;mp4&quot;&gt;
+    &lt;&#x2F;video&gt;
+&lt;&#x2F;div&gt;
+
+
+&lt;div style=&quot;padding-top: 10px; padding-bottom:10px; text-align:center&quot;&gt;
+    &lt;small &gt;&lt;i&gt;6+1 Autonomous. Time: 14.74&#x27;&#x27;&lt;&#x2F;i&gt;&lt;&#x2F;small&gt;
+&lt;&#x2F;div&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;development-story&quot;&gt;Development Story&lt;&#x2F;h2&gt;
+&lt;p&gt;Acetate&#x27;s development takes a whole year. The main reason for this, of course, is the COVID-19 pandemic. As our team is based in Shanghai, we had undergone a lockdown from mid-March to late July, and the effect of the pandemic continued even after the lockdown. Due to this, Acetate is not able to attend any competition - because there isn&#x27;t one available during that special period.&lt;&#x2F;p&gt;
+&lt;p&gt;One of the other constraints we have under such a situation is our field. Our shop&#x27;s height is not enough to shoot the Cargo, so we have to find other places for testing and practice. This made the process of building Acetate even harder.&lt;&#x2F;p&gt;
+&lt;p&gt;Even with those constrictions, our team finished 10+ small iterations on Acetate and 2 major iterations (MK1 and MK2) on Acetate. We discovered the problems during designing, assembling, and finally testing &amp;amp; debugging.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;acetate-mk1-turret-tests-basic-vision-aim-software-framework&quot;&gt;Acetate MK1: Turret Tests, Basic Vision Aim, Software Framework&lt;&#x2F;h3&gt;
+&lt;p&gt;During the first design stage, our team discussed and settled down the design goals we have for FRC Season 2022.&lt;&#x2F;p&gt;
+&lt;p&gt;We described the competition with these words: fast-paced, violent, strong-defensive, and agile (this makes me consider Rapid React to be one of the best names for FRC games). Due to those requirements, a turret becomes a must, as it can help our robot to aim at the target even under heavy defense. To leave space for the turret, the climbing mechanism needs to be compact. Finally, the whole robot combined should have a really low center of gravity, to counteract tipping caused by all the potential collisions. &lt;&#x2F;p&gt;
+&lt;p&gt;This led to the first version of our robot design. Our robot uses the old 2021 drivetrain from &lt;a href=&quot;https:&#x2F;&#x2F;keseterg.github.io&#x2F;eportfolio&#x2F;projects&#x2F;robots&#x2F;zorro&#x2F;&quot;&gt;Zorro&lt;&#x2F;a&gt;, but with an increased width of the traction thread from 1 inch to 1.5 inch. This brings higher traction and thus more stability and counter-defense abilities.&lt;&#x2F;p&gt;
+&lt;p&gt;For the robot&#x27;s Superstructure, we have a simple pneumatically actuated intake, equipped with mecanum wheels for automatic cargo centering. The end of the ballpath is equipped with a turret without a backboard, so it will be simple enough for our team to make.&lt;&#x2F;p&gt;
+&lt;p&gt;Acetate MK1 is assembled during the winter vacation and the first month of the 2022 spring semester.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;acetate-mk2-increase-turret-angle-complex-control-autonomous&quot;&gt;Acetate MK2: Increase Turret Angle, Complex Control, Autonomous&lt;&#x2F;h3&gt;
+&lt;p&gt;During the build season, we realized some of the drawbacks of our design. The backboard is far more important than we originally considered, as it can significantly increase the locations where the robot can shoot the cargo. At the same time, we find the simple mecanum intake is prone to breaking under high-speed collisions. This leads to the various improvements made on Acetate MK2, whose features are shown in the previous passage.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;the-end-of-frc-2022&quot;&gt;The End of FRC 2022&lt;&#x2F;h3&gt;
+&lt;p&gt;Unfortunately, till the very end of the year 2022, the opportunity for competition does not come. Acetate is not able to compete in any of the formal competitions, but only in one online regional competition.&lt;&#x2F;p&gt;
+&lt;p&gt;During the online regional, Acetate and IronPulse Robotics won the Autonomous Award for FRC Hangzhou Regional 2022 (online).&lt;&#x2F;p&gt;
+&lt;p&gt;This is surely a bitter end, as my whole year of work ends in nearly vain. However, Acetate still means a lot to me, as it helps me to grow my understanding of Robotics. This prepares me for competition season 2023 and my future career in Robotics and Autonomous Systems.&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;div&gt;
+    &lt;img alt=&quot;Acetate on Run&quot; class=&quot;lazy&quot; src=&quot;https:&#x2F;&#x2F;keseterg.github.io&#x2F;eportfolio&#x2F;projects&#x2F;robots&#x2F;acetate&#x2F;images&#x2F;acetate-on-run.jpg&quot;&#x2F;&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div style=&quot;padding-top: 10px; padding-bottom:10px; text-align:center&quot;&gt;
+    &lt;small &gt;&lt;i&gt;Acetate MK2, Shot on One of the Shop Nights.&lt;&#x2F;i&gt;&lt;&#x2F;small&gt;
+&lt;&#x2F;div&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Zorro</title>
+          <pubDate>Mon, 02 Mar 2020 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://keseterg.github.io/eportfolio/projects/robots/zorro/</link>
+          <guid>https://keseterg.github.io/eportfolio/projects/robots/zorro/</guid>
+          <description></description>
+      </item>
+    </channel>
+</rss>

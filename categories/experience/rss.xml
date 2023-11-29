@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title> - Experience</title>
+      <link>https://keseterg.github.io/eportfolio</link>
+      <description></description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://keseterg.github.io/eportfolio/categories/experience/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Fri, 01 Sep 2023 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Robonav - Robojackets Robotics Club</title>
+          <pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://keseterg.github.io/eportfolio/experiences/robojackets/</link>
+          <guid>https://keseterg.github.io/eportfolio/experiences/robojackets/</guid>
+          <description>&lt;p&gt;Robonav is one of the subteams under Robojackets - later the Competitive Robotics Club at Georgia Tech. Under the team, I&#x27;m currently a new software member, focusing on learning the team&#x27;s software stack while leading the integration of software and hardware inside the team, developing a real-time servoing program for the robotics arm on the rover at the same time.&lt;&#x2F;p&gt;
+&lt;p&gt;For more technical details, please view the following:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;keseterg.github.io&#x2F;eportfolio&#x2F;projects&#x2F;robots&#x2F;walli&#x2F;&quot;&gt;Walli&lt;&#x2F;a&gt; - Rover for URC 2024&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</description>
+      </item>
+      <item>
+          <title>IronPulse Robotics</title>
+          <pubDate>Fri, 05 Mar 2021 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://keseterg.github.io/eportfolio/experiences/first-robotics-competition/</link>
+          <guid>https://keseterg.github.io/eportfolio/experiences/first-robotics-competition/</guid>
+          <description>&lt;p&gt;My participation in the FIRST Robotics Competition started back in year 2021. In March of 2021, I joined our team - IronPulse Robotic - as one of the new members, preparing for the upcoming 2021 off-season in China. In the following two years, I grew to become the team leader and lead programmer of the whole team.&lt;&#x2F;p&gt;
+&lt;p&gt;To gain more information about the robots I made during my career in FRC and the technical details behind them, please read:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;keseterg.github.io&#x2F;eportfolio&#x2F;projects&#x2F;robots&#x2F;kyanite&#x2F;&quot;&gt;Kyanite&lt;&#x2F;a&gt; - FRC 2022 Offseason Robot&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;keseterg.github.io&#x2F;eportfolio&#x2F;projects&#x2F;robots&#x2F;hydrogen&#x2F;&quot;&gt;Hydrogen&lt;&#x2F;a&gt; - FRC 2023 Robot&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;keseterg.github.io&#x2F;eportfolio&#x2F;projects&#x2F;robots&#x2F;acetate&#x2F;&quot;&gt;Acetate&lt;&#x2F;a&gt; - FRC 2022 Robot&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;keseterg.github.io&#x2F;eportfolio&#x2F;experiences&#x2F;first-robotics-competition&#x2F;(@&#x2F;projects&#x2F;robots&#x2F;zorro&#x2F;index.md)&quot;&gt;Zorro&lt;&#x2F;a&gt; - FRC 2021 Offseason Robot&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;
+&lt;div&gt;
+    &lt;img alt=&quot;History&quot; class=&quot;lazy&quot; src=&quot;https:&#x2F;&#x2F;keseterg.github.io&#x2F;eportfolio&#x2F;experiences&#x2F;first-robotics-competition&#x2F;images&#x2F;history.jpg&quot;&#x2F;&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div style=&quot;padding-top: 10px; padding-bottom:10px; text-align:center&quot;&gt;
+    &lt;small &gt;&lt;i&gt;History of IronPulse Robotics, Team 6941. 2020 - 2022.&lt;&#x2F;i&gt;&lt;&#x2F;small&gt;
+&lt;&#x2F;div&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;div&gt;
+    &lt;img alt=&quot;2023 V&quot; class=&quot;lazy&quot; src=&quot;https:&#x2F;&#x2F;keseterg.github.io&#x2F;eportfolio&#x2F;experiences&#x2F;first-robotics-competition&#x2F;images&#x2F;2023-v.jpg&quot;&#x2F;&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div style=&quot;padding-top: 10px; padding-bottom:10px; text-align:center&quot;&gt;
+    &lt;small &gt;&lt;i&gt;Winning the 2023 Offseason Competition.&lt;&#x2F;i&gt;&lt;&#x2F;small&gt;
+&lt;&#x2F;div&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+    </channel>
+</rss>
